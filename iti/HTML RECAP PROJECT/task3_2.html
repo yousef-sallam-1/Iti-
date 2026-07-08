@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Portfolio Page">
+    <title>task 3.2</title>
+</head>
+
+<body>
+    <header> <!-- head of page-->
+        <h1>My Portfolio Page Project</h1>
+    </header>
+
+    <nav>
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#cource">cource</a>
+
+        <a href="#gallery">gallery</a>
+        <a href="#contant">contant</a>
+
+
+    </nav>
+
+    <main> <!-- contant of page-->
+        <section id="about">
+
+            <h1>Welcome To My Portfolio</h1>
+
+            <p>
+                Hello! My name is yousef salam . I am a Computer Science student.
+                I am learning HTML and I want to become a Front-End Developer.
+            </p>
+
+            <img width="600px" src="oddesy.jpg" alt="oddesy pic">
+
+        </section>
+
+
+        <section id="skills">
+            <h2>MY SKILLS</h2> <!-- unordered-->
+
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+                <li>react soon isa</li>
+
+
+            </ul>
+
+            <h2>My Learning Journey</h2> <!-- ordered-->
+
+            <ol>
+                <li>Learn HTML</li>
+                <li>Learn CSS</li>
+                <li>Learn JavaScript</li>
+                <li>Learn React</li>
+            </ol>
+            <p>
+                I am learning <strong>HTML</strong> every day.
+                <br>
+                My next goal is <em>CSS</em>.
+                <br>
+                <mark>Practice is the key to success.</mark>
+            </p>
+
+
+        </section>
+
+
+
+        <section id="courses"> <!-- My Courses Section -->
+
+            <h2>My Courses</h2>
+
+            <table border="1px">
+
+                <caption>My Courses</caption>
+
+                <thead>
+
+                    <tr>
+                        <th>Course</th>
+                        <th>Duration</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>HTML</td>
+                        <td>2 Weeks</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>CSS</td>
+                        <td>3 Weeks</td>
+                        <td>Learning</td>
+                    </tr>
+
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>4 Weeks</td>
+                        <td rowspan="2">Coming Soon</td>
+                    </tr>
+
+                    <tr>
+                        <td>React</td>
+                        <td>5 Weeks</td>
+
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+
+                    <tr>
+                        <td colspan="3">Total Courses: 4</td>
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+        </section>
+
+
+
+
+        <section id="gallery"> <!-- Gallery Section -->
+
+            <h2>My Gallery</h2>
+
+            <figure>
+
+                <img src="ss.png" alt=" man with gun" width="200">
+
+                <figcaption>HTML</figcaption>
+
+            </figure>
+
+            <figure>
+
+                <img src="ss.png" alt=" man with gun" width="200">
+
+                <figcaption>CSS</figcaption>
+
+            </figure>
+
+            <figure>
+
+                <img src="ss.png" alt=" man with gun" width="200">
+
+                <figcaption>JavaScript</figcaption>
+
+            </figure>
+
+        </section>
+
+
+
+        <!-- Contact Section -->
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <form>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" placeholder="01xxxxxxxxx">
+
+        <br><br>
+
+        <label for="birth">Birth Date:</label>
+        <input type="date" id="birth">
+
+        <br><br>
+
+        <label for="subject">Subject:</label>
+
+        <select id="subject">
+            <option>Question</option>
+            <option>Job</option>
+            <option>Feedback</option>
+        </select>
+
+        <br><br>
+
+        <p>Preferred Contact Method</p>
+
+        <input type="radio" id="email-contact" name="contact">
+        <label for="email-contact">Email</label>
+
+        <input type="radio" id="phone-contact" name="contact">
+        <label for="phone-contact">Phone</label>
+
+        <br><br>
+
+        <label for="message">Message:</label>
+
+        <br>
+
+        <textarea id="message" rows="5" cols="30" placeholder="Write your message"></textarea>
+
+        <br><br>
+
+        <input type="checkbox" id="agree" required>
+
+        <label for="agree">
+            I agree to the terms and conditions.
+        </label>
+
+        <br><br>
+
+        <button type="submit">Send</button>
+
+        <button type="reset">Reset</button>
+
+    </form>
+
+</section>
+
+
+
+
+
+<!-- FAQ Section -->
+<section id="faq">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+   
+        <summary>What is your major?</summary>
+
+        <p>I study Computer Science.</p>
+
+    </details>
+
+    <details>
+
+        <summary>Which programming language do you like?</summary>
+
+        <p>I like C++ and JavaScript.</p>
+
+    </details>
+
+    <details>
+
+        <summary>How can I contact you?</summary>
+
+        <p>You can send me a message using the contact form.</p>
+
+    </details>
+
+</section>
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer> <!-- end of page-->
+<footer>
+
+    <address>
+
+        Email: yousefsalam353@gmail.com
+
+        <br>
+
+        Cairo, Egypt
+
+    </address>
+
+    <p>
+
+        &copy; 2026 My Portfolio. All Rights Reserved.
+
+    </p>
+
+    <a href="https://github.com" target="_blank">
+        GitHub
+    </a>
+
+    &nbsp;
+
+    <a href="https://linkedin.com" target="_blank">
+        LinkedIn
+    </a>
+
+</footer>
+    </footer>
+
+</body>
+
+</html>
