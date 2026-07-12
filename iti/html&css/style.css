@@ -1,0 +1,142 @@
+* {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* CSS Variables */
+
+:root{
+ --primary-color: #0b3b30;
+    --secondary-color: #ac9f11;
+    --text-color: #000000;
+}
+
+
+/* Element Selector */
+
+body{
+
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* Group Selector */
+
+h1,h2,h3{
+
+    color: var(--secondary-color);
+max-width: 100%;
+min-width: 50%;
+overflow: hidden;
+
+
+}
+
+
+/* Class Selector */
+
+.profile-card{
+
+    padding: 20px;
+
+}
+
+
+.profile-image{
+
+    width: 50%;
+    cursor:all-scroll;
+    background-color: #0b3b30;
+    background-repeat: repeat;
+    background-position: center;
+    
+
+
+}
+
+
+.profile-info{
+
+    margin-top: 20px;
+    background-color: rgb(5, 50, 52);
+    width: 20%;
+
+}
+
+
+
+
+
+.skills-section{
+
+    margin-top: 30px;
+    
+
+}
+
+
+.contact-button{
+
+  width: 10%;
+
+}
+
+
+/* ID Selector */
+
+#skills h2{
+
+    background-color: black;
+    width: 170px;
+    text-align: center;
+
+}
+
+
+/* Child Selector */
+
+#about > p{
+
+    background-color: var(--secondary-color);
+    color: black;
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+/* Descendant Selector */
+
+.profile-info li{
+
+    margin: 10px ;
+    cursor:not-allowed ;
+
+}
+
+
+/* Pseudo Class */
+
+button:hover{
+
+    background-color: var(--secondary-color) !important; /* Use `!important`  used it to make secondery color is  main*/ 
+
+    background-color: aquamarine ;
+    color: black;
+    cursor: pointer;
+
+}
+
+#auto
+{
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+    background-color: aliceblue;
+}
