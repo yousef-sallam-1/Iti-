@@ -4,6 +4,7 @@ body {
     height: 100%;
 }
 
+
 .container {
     background-image: url(pyram.jpg);
     background-size: cover;
@@ -19,19 +20,48 @@ body {
 
 
     display: flex;
-    justify-content: center;
+    justify-content:center ;
     align-items: top;
-    gap: 30px;
+    gap: 100px;
     padding-top: 20px;
 }
+
+.container nav .logo
+{
+    background-image: url(logoo.png);
+ 
+
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    border-radius: 50%;
+
+}
+
 
 
 .container nav a {
     color: rgb(255, 208, 0);
     text-decoration: none;
+    width: 90px;
+    height: 40px;
     font-family: cursive;
     font-size: 22px;
     font-weight: bold;
+    text-align: center;
+    transition-duration: 1s;
+
+transition-timing-function: ease-out;
+    
+}
+
+.container .chaild1 nav a:hover
+{
+        background-color: rgb(255, 208, 0);
+    width: 100px;
+    color: black;
+    box-shadow: 0 10px 40px rgba(255, 208, 0, 0.447);
+
 }
 
 .edit {
