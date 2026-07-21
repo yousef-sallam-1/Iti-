@@ -25,7 +25,7 @@ else if (PlayerOneChoice === "scissors" && PlayerTwoChoice === "paper") {
 }
 else {
     console.log("Invalid Choice");
-   
+      
 }
 
 
