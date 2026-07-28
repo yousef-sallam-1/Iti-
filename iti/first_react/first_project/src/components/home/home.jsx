@@ -5,29 +5,48 @@ import img from "../home/sss.jpg";
 
 export default function Home() {
 
-    let [counter, setCounter] = useState(5);
+    let [counter, setCounter] = useState(0);
 
     function increase() {
         setCounter(counter + 1);   
+        console.log(counter);
     }
+
+        function mins() {
+        setCounter(counter - 1);   
+        console.log(counter);
+    }
+
+    
+        function mul() {
+        setCounter(counter * 2);   
+        console.log(counter);
+    }
+
+            function div() {
+        setCounter(counter / 2);   
+        console.log(counter);
+    }
+
+
+
+
+
 
     return (
         <>
-            <h4 className="bg-primary text-center text-light">
+            <h4 className=" text-center text-light bg-danger">
                 Count: {counter}
             </h4>
-
-            <button
-                className="btn btn-info"
-                onClick={increase}
-            >
-                Increase Counter
-            </button>
+ <button className="btn btn-info" onClick={increase} >Increase Counter</button>
+  <button className="btn btn-info" onClick={mins} >decrease Counter</button>
+    <button className="btn btn-info" onClick={mul} >mul 2 </button>
+     <button className="btn btn-info" onClick={div} >div by 2 </button>
 
 
 
 
-            <div className={`sso ${styles.sso}`}>
+            <div className={`container ${styles.sso}`}>
 
                 <div className={`card ${styles.card}`} style={{ width: '18rem' }}>
                     <img src={img} className="card-img-top" alt="..." />

@@ -1,21 +1,25 @@
 
-import './App.css'
-import Home from "./components/home/home";
-import About from './components/about/about';
-import Navbar from './components/navbar/navbar';
+
+import "./App.css";
+import Parent from "./components/parent/parent";
+import Chaild from "./components/chaild/chaild";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const routes = createBrowserRouter([
+  {
+    path: "/",
+    element: <Parent />,
+    children: [
+      {
+        path: "chaild",
+        element: <Chaild />,
+      },
+    ],
+  },
+]);
 
 function App() {
-
-
-  return (
-
-<>
-        <Navbar/>
-        <Home />
-        <About/>
- 
-        </>
-  )
+  return <RouterProvider router={routes}  />;
 }
 
-export default App
+export default App;

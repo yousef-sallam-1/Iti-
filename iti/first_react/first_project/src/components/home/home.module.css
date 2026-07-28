@@ -1,14 +1,15 @@
 .card {
-  
-    border: 5px solid black;
+
     border-radius: 20px;
     margin: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-display: flex;
+    font-family:fantasy;
+
 }
 
 .sso
 {
     display: flex;
     justify-content: center;
+    border: black solid 10px;
+    margin: 10px;
 }
